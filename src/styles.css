@@ -3,8 +3,8 @@ body {
 }
 
 section {
-    height: 500px;
-    background-color: black;
+
+    background-color: white;
 
 }
 
@@ -17,8 +17,11 @@ section {
 }
 
 footer {
-    height: 500px;
-    background-color: grey;
+    margin-top: 20px;
+    height: 100px;
+    background-color: rgb(34, 32, 32);
+    color: white;
+    padding: 40px;
 
 }
 
@@ -30,7 +33,7 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    width: 500px;
+    width: 600px;
     justify-content: space-around;
     font-size: 30px;
 }
@@ -39,9 +42,35 @@ li {
     text-decoration: none;
 }
 
+.subtext {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-subtext {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
 h1 {
     font-size: 90px;
     margin: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 15px;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 p {
@@ -92,7 +121,87 @@ p {
     padding-bottom: 200px;
 }
 
+.social {
+    margin-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .logo {
     height: 100px;
     margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.personal-project-section {
+    display: flex;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.information {
+    margin-left: 15px;
+}
+
+.headshot {
+    width: 250px;
+    border-radius: 125px;
+}
+
+.headshot-container {
+    display: flex;
+
+}
+
+.project-card {
+    width: 25%;
+    height: 300px;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 5px 5px 20px grey;
+}
+
+.project-card-alt {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 2px 2px 10px #ff4500;
+}
+
+.project-card-alt2 {
+    width: 33%;
+    height: 300px;
+    border: 1px solid black;
+    margin: 5px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-image {
+    width: 200px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
