@@ -32,7 +32,7 @@ body {
 }
 
 .custom-shape-divider-bottom-1665465711 .shape-fill {
-    fill: white;
+    fill: rgb(26, 26, 26);
 }
 
 .home_text {
@@ -67,6 +67,7 @@ h1 {
 
 h2 {
     font-size: 30px;
+    color: white;
 }
 
 h3 {
@@ -136,6 +137,7 @@ h6 {
     display: flex;
     justify-content: space-around;
     padding: 70px;
+    background-color: rgb(26, 26, 26);
 }
 
 .information {
@@ -145,6 +147,7 @@ h6 {
 .aboutme_text {
     font-size: 22px;
     font-weight: 300;
+    color: white;
 }
 
 .spacing {
@@ -168,7 +171,7 @@ h6 {
 }
 
 .custom-shape-divider-top-1665476211 .shape-fill {
-    fill: #FFFFFF;
+    fill: rgb(26, 26, 26);
 }
 
 .design-section {
