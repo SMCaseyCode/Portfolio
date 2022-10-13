@@ -21,11 +21,14 @@ html::-webkit-scrollbar {
     color-scheme: light only;
 }
 
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 .home {
