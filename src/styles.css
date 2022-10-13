@@ -24,6 +24,7 @@ html::-webkit-scrollbar {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -200,7 +201,7 @@ h6 {
 }
 
 .design-section {
-    height: 200;
+    height: auto;
     background: rgb(16,156,122);
     background: linear-gradient(90deg, rgba(16,156,122,1) 0%, rgba(0,150,181,1) 50%, rgba(196,196,196,1) 100%);
     position: relative;
