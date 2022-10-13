@@ -390,16 +390,19 @@ $phone: 480px;
     }
 
     .headshot-container {
-        margin: auto;
+        margin: 0;
     }
 
     .headshot {
+        margin: auto;
         width: auto;
         max-width: 300px;
-        height: max-content;
+        height: 300;
+        max-height: 300;
         border-radius: 250px;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .information {
