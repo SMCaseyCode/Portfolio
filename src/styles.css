@@ -31,6 +31,11 @@ body {
     background-color: white;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .home {
     position: relative;
     height: 100vh;
@@ -106,7 +111,7 @@ h3 {
 
 h4 {
     font-size: 30px;
-    margin-top: 125px;
+    margin-top: 105px;
 
 }
 
@@ -133,7 +138,7 @@ h6 {
 
 .socials {
     margin-left: 90vw;
-    margin-top: 50px;
+    margin-top: 7vh;
     z-index: 1;
 }
 
@@ -147,14 +152,18 @@ h6 {
 
 .logo {
     height: 100px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    
 }
 
 .headshot {
+    display: flex;
     width: 500px;
     height: max-content;
     border-radius: 250px;
-    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .headshot-container {
@@ -168,10 +177,12 @@ h6 {
     justify-content: space-around;
     padding: 70px;
     background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .information {
-    margin-left: 180px;
+    margin-left: 120px;
 }
 
 .aboutme_text {
@@ -185,7 +196,7 @@ h6 {
 
 .custom-shape-divider-top-1665476211 {
     position: absolute;
-    top: 0;
+    top: -2;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -204,7 +215,7 @@ h6 {
 }
 
 .design-section {
-    height: auto;
+    height: 100px;
     background: rgb(16,156,122);
     background: linear-gradient(90deg, rgba(16,156,122,1) 0%, rgba(0,150,181,1) 50%, rgba(196,196,196,1) 100%);
     position: relative;
@@ -251,7 +262,7 @@ h6 {
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 20px;
-    margin-right: 350px;
+    margin-right: auto;
 }
 
 .classes {
@@ -301,6 +312,190 @@ $phone: 480px;
 \\\\\\\\\\\\\\\\\\\\\\\\ Media Queries Below \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
 
+/* Laptop */
+
+@media (max-width: 1024px){
+
+    .sub-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        background-color: white;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .aboutme_text {
+        font-size: 20px;
+    }
+
+    .headshot {
+        width: 450px;
+    }
+
+    .headshot-container{
+        margin-left: 20px;
+    }
+
+    .spacing {
+        margin: 0;
+    }
+
+    .information {
+        margin-left: 60px;
+        margin-bottom: 40px;
+    }
+
+    .subtext {
+        margin-right: auto;
+    }
+
+    h4 {
+        margin-top: 15%;
+        margin-bottom: 20px;
+    }
+
+    .projects-section {
+        height: 600px;
+    }
+}
+
+@media (max-width: 940px) {
+
+    h5 {
+        padding: 2%;
+        font-size: 24px;
+    }
+
+    h6 {
+         padding: 2%;
+           font-size: 24px;
+    }
+ }
+
+@media (max-width: 768px){
+
+    .socials {
+        position: absolute; /* taken out of the normal flow of the document */
+        top: 35%; /* moved down by 50% of the screen height */
+        transform: translateY(-10%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+        width: 100%; /* needs to be defined to keep the default block behavior */
+        text-align: center;
+        margin: 0; /* again, for perfect center */
+        z-index: 1;
+    }
+    
+    .social {
+        margin: 0;
+    }
+
+    .social2 {
+        margin-left: 16px;
+    }
+
+    .sub-section {
+        flex-direction: column;
+    }
+
+    .headshot-container {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redditIMG {
+        padding: 55px;
+        padding-right: 30px;
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 54px;
+    }
+    
+
+    h5 {
+        padding: 2%;
+        font-size: 24px;
+    }
+
+    h6 {
+        padding: 2%;
+        font-size: 24px;
+    }
+    
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .subtext {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .redditIMG {
+        padding: 0;
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+    }
+
+    .project-text{
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    .steven_title {
+        font-size: 22px;
+    }
+
+    h5 {
+        padding: 2%;
+        font-size: 20px;
+    }
+
+    h6 {
+         padding: 2%;
+           font-size: 20px;
+    }
+
+    .logo {
+        height: 12vw;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .project-card-alt2 {
+        margin: 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+    
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+
 @media (max-width: 480px) {
 
     .home {
@@ -311,8 +506,9 @@ $phone: 480px;
     }
 
     .logo {
-        height: 70px;
-        padding: 5px;
+        height: 15vw;
+        padding-left: 20px;
+        padding-top: 20px;
     }
 
     h1 {
@@ -347,10 +543,12 @@ $phone: 480px;
     }
     
     .socials {
-        margin-left: auto;
-        margin-top: 210px;
-        margin-right: auto;
-        margin-bottom: auto;
+        position: absolute; /* taken out of the normal flow of the document */
+        top: 35%; /* moved down by 50% of the screen height */
+        transform: translateY(-10%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+        width: 100%; /* needs to be defined to keep the default block behavior */
+        text-align: center;
+        margin: 0; /* again, for perfect center */
         z-index: 1;
     }
     
@@ -371,7 +569,7 @@ $phone: 480px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        padding: 70px;
+        padding: 15px;
         background-color: white;
         margin: auto;
     }
@@ -397,11 +595,13 @@ $phone: 480px;
     }
 
     .headshot-container {
-        margin: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .headshot {
-        margin: auto;
         width: auto;
         max-width: 300px;
         height: 300;
@@ -410,11 +610,14 @@ $phone: 480px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
     }
 
     .information {
-        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 20px;
+        
     }
 
     .spacing{
@@ -486,8 +689,8 @@ $phone: 480px;
 
     .subtext {
         margin: 0;
-        margin-left: 35px;
-        margin-right: 35px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 16px;
         font-weight: 400;
     }
