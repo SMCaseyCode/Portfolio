@@ -1,0 +1,82 @@
+html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+
+  :root {
+    color-scheme: light only;
+}
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.home {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    background: rgb(16,156,122);
+    background: linear-gradient(90deg, rgba(16,156,122,1) 0%, rgba(0,150,181,1) 50%, rgba(196,196,196,1) 100%);
+}
+
+.home_text {
+    position: absolute; /* taken out of the normal flow of the document */
+    width: 100%; /* needs to be defined to keep the default block behavior */
+    text-align: center;
+    margin: 0; /* again, for perfect center */
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-bottom: auto;
+    
+}
+
+h2 {
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+    color: white;
+}
+
+.project-area {
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+
+.essay {
+    height: 1100px;
+    background: rgb(16,156,122);
+    background: linear-gradient(90deg, rgba(16,156,122,1) 0%, rgba(0,150,181,1) 50%, rgba(196,196,196,1) 100%);
+}
+
+.project-text {
+    height: auto;
+}
+
+.pdf {
+    width: 100%;
+    height: 1000px;
+    min-width: 800px;
+    max-width: 800px;
+}
