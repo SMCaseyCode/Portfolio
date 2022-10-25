@@ -64,10 +64,6 @@ nav {
     height: 25vh;
 }
 
-.custom-shape-divider-bottom-1665465711 .shape-fill {
-    fill: white;
-}
-
 .home_text {
     position: absolute; /* taken out of the normal flow of the document */
     top: 25%; /* moved down by 50% of the screen height */
@@ -208,10 +204,6 @@ h6 {
     display: block;
     width: calc(115% + 1.3px);
     height: 174px;
-}
-
-.custom-shape-divider-top-1665476211 .shape-fill {
-    fill: white;
 }
 
 .design-section {
@@ -588,10 +580,6 @@ $phone: 480px;
         height: 12vh;
     }
     
-    .custom-shape-divider-bottom-1665465711 .shape-fill {
-        fill: white;
-    }
-
     .headshot-container {
         margin: auto;
         display: flex;
@@ -643,10 +631,6 @@ $phone: 480px;
         height: 12vh;
     }
     
-    .custom-shape-divider-top-1665476211 .shape-fill {
-        fill: white;
-    }
-
     .design-section {
         height: 150;
         background: rgb(16,156,122);
