@@ -65,12 +65,6 @@ nav {
     fill: white;
 }
 
-/* applied through js if darkreader is on, !important attribute overrides any darkreader color*/
-.block_darkreader
-{
-    fill: #181a1a !important;
-}
-
 .home_text {
     position: absolute; /* taken out of the normal flow of the document */
     top: 25%; /* moved down by 50% of the screen height */
