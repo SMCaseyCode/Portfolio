@@ -2,6 +2,11 @@
 function color_change()
 {
   const yes_darkreader = document.querySelector("meta[name=darkreader]");
+
+   const getContrast = getComputedStyle(document.documentElement)
+    .getPropertyValue("background-color");
+    console.log(getContrast);
+
   const all_svgs = document.getElementsByTagName("svg");
   
   // stores the state of the inline style: has it already been applied?
@@ -10,8 +15,8 @@ function color_change()
   // wave svgs are in positions 0 and 3 in node list, only modifying those
   if (yes_darkreader && !svgs_has_style)
   {
-    all_svgs[0].setAttribute("style", "fill: #181a1a !important;");
-    all_svgs[3].setAttribute("style", "fill: #181a1a !important;");
+    all_svgs[0].setAttribute("style", "fill:" + getContrast + " !important;");
+    all_svgs[3].setAttribute("style", "fill:" + getContrast + " !important;");
   }
 
   else if (!yes_darkreader && svgs_has_style)
