@@ -62,9 +62,6 @@ nav {
     display: block;
     width: calc(120% + 1.3px);
     height: 25vh;
-}
-
-.custom-shape-divider-bottom-1665465711 .shape-fill {
     fill: white;
 }
 
@@ -208,9 +205,6 @@ h6 {
     display: block;
     width: calc(115% + 1.3px);
     height: 174px;
-}
-
-.custom-shape-divider-top-1665476211 .shape-fill {
     fill: white;
 }
 
@@ -586,9 +580,6 @@ $phone: 480px;
         display: block;
         width: calc(105% + 1.3px);
         height: 12vh;
-    }
-    
-    .custom-shape-divider-bottom-1665465711 .shape-fill {
         fill: white;
     }
 
@@ -641,12 +632,9 @@ $phone: 480px;
         display: block;
         width: calc(105% + 1.3px);
         height: 12vh;
-    }
-    
-    .custom-shape-divider-top-1665476211 .shape-fill {
         fill: white;
     }
-
+    
     .design-section {
         height: 150;
         background: rgb(16,156,122);
