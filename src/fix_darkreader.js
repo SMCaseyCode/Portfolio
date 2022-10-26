@@ -26,7 +26,7 @@ function color_change()
   }
 
   // Compares background colors for on the fly changes, if found, changes background fill.
-  if (svgs_has_style && all_svgs[0] != getContrast || all_svgs[3] != getContrast)
+  if (svgs_has_style && all_svgs[0] != getContrast)
   {
     all_svgs[0].setAttribute("style", "fill:" + getContrast + " !important;");
     all_svgs[3].setAttribute("style", "fill:" + getContrast + " !important;");
