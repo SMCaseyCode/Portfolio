@@ -3,9 +3,9 @@ function color_change()
 {
   const yes_darkreader = document.querySelector("meta[name=darkreader]");
 
-   const getContrast = getComputedStyle(document.documentElement)
+  // Gets the current background value and stores it into getContrast
+  const getContrast = getComputedStyle(document.documentElement)
     .getPropertyValue("background-color");
-    console.log(getContrast);
 
   const all_svgs = document.getElementsByTagName("svg");
   
@@ -25,7 +25,16 @@ function color_change()
     all_svgs[3].removeAttribute("style");
   }
 
+  // Compares background colors for on the fly changes, if found, changes background fill.
+  if (yes_darkreader && svgs_has_style && all_svgs[0] != getContrast)
+  {
+    all_svgs[0].setAttribute("style", "fill:" + getContrast + " !important;");
+    all_svgs[3].setAttribute("style", "fill:" + getContrast + " !important;");
+  }
+
   setTimeout(color_change, 50);
 }
 
 color_change();
+
+//Thank you to saturdaynite for help on this. https://github.com/saturdaynite
