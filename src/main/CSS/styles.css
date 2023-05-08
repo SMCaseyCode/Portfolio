@@ -1,5 +1,6 @@
 
 * {
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -19,7 +20,6 @@ li, a {
 
 header {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
     padding: 50px 10%;
@@ -48,7 +48,6 @@ p {
 
 .portrait-text {
     z-index: 900;
-    font-family: 'Montserrat', sans-serif;
     padding-left: 200px;
     padding-top: 160px;
     height: 100vh;
@@ -60,7 +59,6 @@ p {
 }
 
 .profession {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding-top: 15px;
     padding-bottom: 30px;
@@ -68,7 +66,6 @@ p {
 }
 
 .contact-me-button {
-    font-family: 'Montserrat', sans-serif;
     color: rgba(255,200,107,90%);
     padding: 10px;
     font-size: 26px;
@@ -101,7 +98,6 @@ p {
 
 .about-div {
     background: #31333B;
-    font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     box-shadow: 10px -30px 40px #1b1b1c;
 }
@@ -130,3 +126,44 @@ p {
     font-weight: 700;
     text-align: center;
 }
+
+.cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 60px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: #3D3E42;
+    height: 300px;
+}
+
+.card-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: auto;
+    padding-top: 60px;
+}
+
+.card-content {
+    margin-top: auto;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+.card-content h2 {
+    padding-bottom: 60px;
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+
+/* grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); for mobile */
