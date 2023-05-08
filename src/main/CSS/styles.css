@@ -25,6 +25,10 @@ header {
     padding: 50px 10%;
 }
 
+h1 {
+    color: white;
+}
+
 p {
     color: white;
 }
@@ -43,9 +47,12 @@ p {
 }
 
 .portrait-text {
+    z-index: 900;
     font-family: 'Montserrat', sans-serif;
     padding-left: 200px;
     padding-top: 160px;
+    height: 100vh;
+    max-height: 700px;
 }
 
 .name {
@@ -76,4 +83,36 @@ p {
     border: 4px solid rgba(255,200,107,100%);
     cursor: pointer;
     transition: .2s;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 60px;
+    font-size: 2.5rem;
+}
+
+.social-links a {
+    font-size: 2.5rem;
+    padding: 5px;
+}
+
+.about-div {
+    background: #31333B;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    box-shadow: 10px -30px 40px #1b1b1c;
+}
+.about-div h1 {
+    font-size: 58px;
+    font-weight: 500;
+    padding-left: 160px;
+    padding-top: 120px;
+}
+.about-div p {
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 240px;
 }
