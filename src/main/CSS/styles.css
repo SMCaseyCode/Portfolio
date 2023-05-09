@@ -188,6 +188,7 @@ p {
 }
 .portfolio-card {
     position: relative;
+    box-shadow: 3px 10px 10px black;
 }
 .portfolio-card-img {
     width: 100%;
