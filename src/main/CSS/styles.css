@@ -167,3 +167,55 @@ p {
 }
 
 /* grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); for mobile */
+
+.portfolio-div {
+    background: #31333B;
+}
+.portfolio-div h1 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 58px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.portfolio-cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    padding: 100px;
+}
+.portfolio-card {
+    position: relative;
+}
+.portfolio-card-img {
+    width: 100%;
+    display: block;
+}
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #272729;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.20s;
+}
+.image-overlay:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.image-title{
+    font-size: 2em;
+}
+.image-description {
+    font-size: 1em;
+    margin-top: 0.25em;
+    padding: 0 10% 10%;
+}
