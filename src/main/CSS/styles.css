@@ -12,12 +12,22 @@ html {
 
 body {
     background-color: #272729;
-    background-image: url("../Images/Portrait.png");
+}
+
+.background_image {
+    background-image: url("../Images/PortfolioBackdrop.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 900px) {
+    .background_image {
+        background-image: url("../Images/Portrait.png");
+    }
 }
 
 li, a {
-    font-size: 18px;
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
 }
@@ -50,29 +60,39 @@ p {
     color: #FFC86B;
 }
 
+@media screen and (max-width: 456px){
+    .navbar-links a{
+        font-size: .8em;
+    }
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 .portrait-text {
     z-index: 900;
-    padding-left: 200px;
-    padding-top: 160px;
+    padding-left: 10%;
+    padding-top: 10%;
     height: 100vh;
-    max-height: 700px;
+    max-height: 70vh;
 }
 
 .name {
-    font-size: 26px;
+    font-size: 1.6rem;
 }
 
 .profession {
     font-weight: 700;
     padding-top: 15px;
     padding-bottom: 30px;
-    font-size: 26px;
+    font-size: 1.6rem;
 }
 
 .contact-me-button {
     color: rgba(255,200,107,90%);
     padding: 10px;
-    font-size: 26px;
+    font-size: 1.6rem;
     text-align: center;
     border-radius: 10px;
     background-color: transparent;
@@ -92,7 +112,7 @@ p {
     margin-left: auto;
     margin-right: 10px;
     width: 60px;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
 }
 
 .social-links a {
@@ -106,27 +126,35 @@ p {
     box-shadow: 10px -30px 40px #1b1b1c;
 }
 .about-div h1 {
-    margin: 7px;
-    font-size: 58px;
+    margin: 1%;
+    font-size: 3rem;
     font-weight: 700;
-    padding-left: 160px;
-    padding-top: 120px;
+    padding-left: 10%;
+    padding-top: 10%;
 }
 .about-div p {
-    font-size: 24px;
+    font-size: 1.8rem;
     font-weight: 300;
-    padding-top: 30px;
-    padding-left: 240px;
-    padding-right: 100px;
+    padding-top: 3%;
+    padding-left: 17%;
+    padding-right: 10%;
+}
+
+@media screen and (max-width: 600px) {
+
+    .about-div p {
+
+    }
+    
 }
 
 .skills-div {
     background: #31333B;
 }
 .skills-div h1 {
-    padding-top: 100px;
-    padding-bottom: 40px;
-    font-size: 58px;
+    padding-top: 10%;
+    padding-bottom: 4%;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
@@ -136,7 +164,7 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 60px;
+    padding: 6%;
 }
 
 .card {
@@ -168,6 +196,7 @@ p {
     margin-top: 0;
     color: white;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 /* grid-template-columns: repeat(auto-fill, minmax(225px, 1fr)); for mobile */
@@ -177,9 +206,9 @@ p {
     padding-bottom: 100px;
 }
 .portfolio-div h1 {
-    padding-top: 100px;
-    padding-bottom: 10px;
-    font-size: 58px;
+    padding-top: 10%;
+    padding-bottom: 1%;
+    font-size: 3rem;
     font-weight: 700;
     text-align: center;
 }
@@ -189,8 +218,15 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 35px;
-    padding: 100px 100px 70px;
+    padding: 6% 6% 7%;
 }
+
+@media screen and (max-width: 600px){
+    .portfolio-cards{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
 .portfolio-card {
     position: relative;
     box-shadow: 3px 10px 10px black;
@@ -217,11 +253,12 @@ p {
 .portfolio-button-see-more button{
     color: #31333B;
     padding: 10px;
-    font-size: 15px;
+    font-size:  0.9rem;
     font-weight: 500;
     text-align: center;
     border-radius: 10px;
     background-color: rgba(255,200,107,100%);
+    border: 1px solid rgba(255,200,107,100%);
     cursor: pointer;
 }
 
@@ -230,16 +267,17 @@ p {
     opacity: 0.8;
 }
 .image-title{
-    font-size: 2em;
+    font-size: 2.5rem;
 }
 .image-description {
-    font-size: 1em;
+    font-size: 1.2rem;
     margin-top: 0.25em;
     padding: 0 10% 10%;
 }
 
 .portfolio-button-div {
     text-align: center;
+    padding-bottom: 5%;
 }
 
 .portfolio-button {
@@ -250,6 +288,7 @@ p {
     text-align: center;
     border-radius: 10px;
     background-color: rgba(255,200,107,80%);
+    border: 1px solid rgba(255,200,107,80%);
 }
 .portfolio-button:hover {
     cursor: pointer;
@@ -264,7 +303,7 @@ p {
 }
 .contactme-title {
     padding: 20px;
-    font-size: 3.5em;
+    font-size: 4rem;
     font-weight: 700;
     text-align: center;
 }
@@ -276,8 +315,8 @@ p {
     column-gap: 10px;
     row-gap: 10px;
     flex-wrap: wrap;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .contactme-email {
     display: flex;
@@ -310,10 +349,18 @@ p {
     font-size: 2em;
     padding-right: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .contactme-email h1, i{
+        font-size: 1.3em;
+    }
+}
+
 .contactme-phone i {
     font-size: 2em;
     padding-right: 20px;
 }
+
 .contactme-discord i {
     font-size: 2em;
     padding-right: 20px;
@@ -321,5 +368,5 @@ p {
 
 .endofpage {
     background: #31333B;
-    height: 60px;
+    height: 10vh;
 }
