@@ -128,11 +128,11 @@ p {
 
 .about-div {
     background: #31333B;
-    margin-top: 20px;
+    margin-top: 0;
     box-shadow: 10px -30px 40px #1b1b1c;
 }
 .about-div h1 {
-    margin: 1%;
+    margin: 0 1% 1%;
     font-size: 3rem;
     font-weight: 700;
     padding-left: 10%;
